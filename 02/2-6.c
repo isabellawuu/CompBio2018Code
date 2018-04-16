@@ -7,5 +7,5 @@ int main(void){
   fprintf(fp, "hello, world!");
 
   fclose(fp);
-  return 0
+  return 0;
 }
