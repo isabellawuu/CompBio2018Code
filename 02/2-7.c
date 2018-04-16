@@ -2,7 +2,7 @@
 
 int main(void){
   int t;
-  double x, r, k;
+  double x, x0, xx, r, k;
   r=1; k=3;
 
   FILE *fp;
