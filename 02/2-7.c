@@ -10,7 +10,7 @@ int main(void){
   fprintf(fp, "%d, %d", 0, x0);
 
   for(t=0; t<300; t++){
-    x=xx
+    x=xx;
     xx=x+r*(1-x/k)*x;
     fprintf(fp, "%d, %d, t, xx");
   }
