@@ -1,18 +1,22 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<math.h>
 
 int main(void){
+float r, k;
+  double x, x0, xx;
   int t;
-  double x, x0, xx, r, k;
-  r=1; k=3;
+  r=0.4; k=1000; x0=10;
 
   FILE *fp;
   fp=fopen("output.dat", "a");
-  fprintf(fp, "%d, %d", 0, x0);
+  fprintf(fp, "%d, %f\n", 0, x0);
+  x=x0;
 
   for(t=0; t<300; t++){
-    x=xx;
     xx=x+r*(1-x/k)*x;
-    fprintf(fp, "%d, %d, t, xx");
+
+    fprintf(fp, "%d, %f\n", t, xx);
+    x=xx;
   }
 
   fclose(fp);
